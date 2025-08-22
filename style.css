@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(to bottom right, #3e71a3, #102134);
+  transition: background 0.5s ease;
+}
+
+.dark body {
+  background: linear-gradient(to bottom right, #070b12, #0c1427);
+}
+@keyframes dropIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .letter {
+    display: inline-block;
+    animation: dropIn 0.5s ease forwards;
+  }
+  colorz{
+    color: rgb(155, 171, 198);
+  }
+  html {
+  scroll-behavior: smooth;
+}
+ @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: fadeInUp 0.5s ease forwards;
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+  .delay-600 { animation-delay: 600ms; }
